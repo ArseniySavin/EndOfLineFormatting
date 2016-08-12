@@ -18,9 +18,9 @@ EndOfLineFormatting": {
 ```
 Set your regular expression format for replace.
 
-## GitHub
+## Issues
 
-[EndOfLineFormatting repository](https://github.com/ArseniySavin/EndOfLineFormatting/)
+[EndOfLineFormatting issues](https://github.com/ArseniySavin/EndOfLineFormatting/issues)
 
 ## Release Notes
 
