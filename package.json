@@ -1,0 +1,45 @@
+{
+    "name": "EndOfLineFormatting",
+    "displayName": "EndOfLine Formatting",
+    "description": "It can replace string chars \\r\\n into text on CR or LF symbol.",
+    "icon": "images/logo.svg",
+    "version": "0.0.1",
+    "publisher": "savin-arseni",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.formatting"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [{
+            "command": "extension.formatting",
+            "title": "EndOfLine Formating"
+        }],
+        "keybindings": [
+            {
+                "command": "extension.formatting",
+                "key": "Alt+N"
+            }
+        ],
+        "menus": {
+            "editor/title": [
+                {
+                    "when": "editorHasSelection",
+                    "command": "extension.formatting",
+                    "group": "navigation"
+                }
+            ]
+        }
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "vscode": "^0.11.0"
+    }
+}
