@@ -19,7 +19,7 @@ function activate(context) {
         var replaceChar = "\n";
 
         if(configure.has('regexpPattern')){
-            regexpPattern =  new RegExp(configure.get("regexpPattern", regexpPatternDef));          
+            regexpPattern =  new RegExp(configure.get("regexpPattern", regexpPatternDef), "g");          
         }
         if(configure.has("replaceChar")){
             replaceChar = configure.get("replaceChar", replaceChar);
